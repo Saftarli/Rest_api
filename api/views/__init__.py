@@ -1,7 +1,11 @@
 from flask import Flask, jsonify, request
+from run import app
 
-app = Flask(__name__)
-client = app.test_client()
+
+
+
+
+
 
 tutorials = [
     {
@@ -43,5 +47,6 @@ def delete_tutorial(tutorial_id):
     tutorials.pop(idx)
     return '', 204
 
-if __name__ == '__main__':
-    app.run()
+
+
+
